@@ -8,13 +8,13 @@ bootstrap = Bootstrap(app)
 cache = Cache(app, config={'CACHE_TYPE': 'simple'})
 
 @app.route('/')
-@cache.cached(timeout=1)
+@cache.cached(timeout=10)
 def index():
     # 2643743 London, 3186952 Zadar
     return city(3186952)
 
 @app.route('/<id>')
-@cache.cached(timeout=1)
+@cache.cached(timeout=10)
 def city(id):
     parameters = { 'appid': 'OVDJE_STAVITE_SVOJ_OPENWEATHEMAP_APPID',
     'id': id, 'units': 'metric', 'lang': 'hr' }
