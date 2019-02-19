@@ -1,5 +1,5 @@
 # p7-flask-openweathermap-api
-Flask aplikacija odrađena na SIT predavanju 22.11.2018.
+Flask aplikacija koja pojašnjava konzumiranje Web API-ja 
 
 Napomene:
 1. U liniji 19. stavite APPID koji ste dobili prilikom registracije na openweathermap servis
